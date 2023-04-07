@@ -24,6 +24,11 @@ class m230305_105442_create_fruits_table extends Migration
             'n_calories' => $this->integer()->notNull(),
             'n_sugar' => $this->decimal(10,2)->notNull(),
         ]);
+        
+        $this->createTable('{{%favorites}}', [
+            'id' => $this->primaryKey(),
+            'fruit_id' => $this->integer()->notNull(),
+        ]);
     }
 
     /**
@@ -32,5 +37,6 @@ class m230305_105442_create_fruits_table extends Migration
     public function safeDown()
     {
         $this->dropTable('{{%fruits}}');
+        $this->dropTable('{{%favorites}}');
     }
 }

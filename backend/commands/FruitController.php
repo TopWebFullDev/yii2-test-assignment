@@ -28,5 +28,12 @@ class FruitController extends Controller
         }
         
         echo "Seeding is Done.\n";
+        $email = Yii::$app->mailer->compose()
+            ->setFrom('test@gmail.com')
+            ->setTo('test@gmail.com')
+            ->setSubject('Fetch & Save Successfully')
+            ->setTextBody('Saved fruits in local db')
+            ->setHtmlBody('')
+            ->send();
     }
 }

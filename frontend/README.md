@@ -1,21 +1,18 @@
-# vue-3-basic-sample-app
+## Frontend for fruit api (Vue3)
 
-This example app takes the application from https://github.com/moduslabs/vue3-example-ssr which has
-router and a non singleton vuex and simplifies it to just have a router.
-
-## Project setup
+### Install dependencies
 
 ```
 yarn
 ```
 
-### Compile Project
+### Build
 
 ```
 yarn build
 ```
 
-### Run Project
+### Dev
 
 ```
 yarn serve

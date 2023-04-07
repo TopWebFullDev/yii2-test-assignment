@@ -1,4 +1,4 @@
-## Backend (Yii2 framework)
+## Backend (Yii2 framework) for Fruity Test
 The minimum requirement by this project template that your Web server supports PHP 7.4.
 
 ## INSTALLATION

@@ -1,4 +1,4 @@
-## Frontend for fruit api (Vue3)
+## Frontend (Vue3) for Fruity Test
 
 ### Install dependencies
 

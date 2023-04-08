@@ -34,7 +34,7 @@ Run the migrations to create the necessary tables:
 yii migrate/up --interactive=0
 ```
 
-Seed Database
+Seed Database and send email
 
 ```
 yii fruit
@@ -43,5 +43,5 @@ yii fruit
 Start api server
 
 ```
-php yii serve --port=8081
+php yii serve --port=3001
 ```

@@ -3,9 +3,9 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%fruits}}`.
+ * Handles the creation of tables `{{%fruits}}` and `{{%favorites}}`.
  */
-class m230305_105442_create_fruits_table extends Migration
+class m230407_134254_create_tables extends Migration
 {
     /**
      * {@inheritdoc}
@@ -23,6 +23,7 @@ class m230305_105442_create_fruits_table extends Migration
             'n_fat' => $this->decimal(10,2)->notNull(),
             'n_calories' => $this->integer()->notNull(),
             'n_sugar' => $this->decimal(10,2)->notNull(),
+            'b_favorite' => $this->boolean()->defaultValue(0),
         ]);
         
         $this->createTable('{{%favorites}}', [

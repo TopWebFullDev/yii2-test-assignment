@@ -12,7 +12,6 @@ class FruitController extends Controller
     {
         $url = 'https://fruityvice.com/api/fruit/all';
         $data = json_decode(file_get_contents($url), true);
-        
         foreach ($data as $fruitData) {
             $fruit = new Fruit();
             $fruit->name = $fruitData['name'];
@@ -28,7 +27,7 @@ class FruitController extends Controller
         }
         
         echo "Seeding is Done.\n";
-        $email = Yii::$app->mailer->compose()
+        Yii::$app->mailer->compose()
             ->setFrom('test@gmail.com')
             ->setTo('test@gmail.com')
             ->setSubject('Fetch & Save Successfully')
